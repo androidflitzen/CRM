@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawerLayout"
+    tools:context=".activity.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorSecondary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_scrollFlags="scroll|enterAlways|snap" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtTile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/raleway_extra_bold"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/title_size_18">
+
+                    </TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardAddEnquiry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_20sp"
+                        android:visibility="gone"
+
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingRight="@dimen/_10sp"
+                            android:paddingLeft="@dimen/_10sp">
+
+                            <ImageView
+                                android:id="@+id/imgPlus"
+                                android:layout_width="@dimen/_10sp"
+                                android:layout_height="@dimen/_10sp"
+                                android:src="@drawable/ic_plus"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_enquiry"
+                                android:layout_gravity="center"
+                                android:layout_toRightOf="@id/imgPlus"
+                                android:layout_marginLeft="@dimen/_5sp"
+                                android:layout_centerVertical="true"
+                                android:textSize="@dimen/_12sp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/raleway_semi_bold"
+                                android:gravity="center">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <include layout="@layout/content_home_screen"
+            android:layout_below="@id/appBarLayout"
+            android:layout_height="match_parent"
+            android:layout_above="@id/cardBottomNav"
+            android:layout_width="match_parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sp"
+            android:background="@color/white"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            app:cardElevation="@dimen/_20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/txtDashBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/dashboard"
+                    android:fontFamily="@font/raleway_regular"
+                    android:textColor="@color/dark_black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_15sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtEnquiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/enquiry"
+                    android:fontFamily="@font/raleway_regular"
+                    android:textColor="@color/dark_black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_15sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtQuotations"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/quotations"
+                    android:fontFamily="@font/raleway_regular"
+                    android:textColor="@color/dark_black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_15sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtOrders"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/orders"
+                    android:fontFamily="@font/raleway_regular"
+                    android:textColor="@color/dark_black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_15sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--<com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/black"
+            android:layout_gravity="bottom"
+            app:itemTextColor="@color/white"
+            app:labelVisibilityMode="labeled"
+
+            app:menu="@menu/bottom_navigation_main">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+  <!--  <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer"/>-->
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

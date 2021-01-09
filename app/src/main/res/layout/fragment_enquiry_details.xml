@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/_20sp"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_20sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_semi_bold"
+                    android:text="@string/enquiry_details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17sp">
+
+                </TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAddFollowUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    app:cardBackgroundColor="@color/light_black">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:paddingLeft="@dimen/_10sp"
+                        android:paddingRight="@dimen/_10sp">
+
+                        <ImageView
+                            android:id="@+id/imgPlus"
+                            android:layout_width="@dimen/_10sp"
+                            android:layout_height="@dimen/_10sp"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_plus">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_5sp"
+                            android:layout_toRightOf="@id/imgPlus"
+                            android:fontFamily="@font/raleway_semi_bold"
+                            android:gravity="center"
+                            android:text="@string/add_follow_up"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sp">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sp"
+                android:background="@color/black">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text="@string/service1"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtServiceName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text=" Logo Design"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text="Enquiry source : "
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtEnquirySource"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text="Linkedin"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text="Other Details :"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtOtherDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text=" details"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text="Enquiry Category :"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtEnquiryCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text=" category"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_5sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text="Importance : "
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtImportance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_20sp"
+                        android:background="@drawable/rounded_corner_button_extra_radius"
+                        android:backgroundTint="@color/red"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_20sp"
+                        android:paddingTop="@dimen/_2sp"
+                        android:paddingRight="@dimen/_20sp"
+                        android:paddingBottom="@dimen/_2sp"
+                        android:text="@string/urgent"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_semi_bold"
+                android:padding="@dimen/_20sp"
+                android:text="@string/contact_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sp">
+
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sp"
+                android:background="@color/black">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sp"
+                        android:layout_height="@dimen/_20sp"
+                        android:src="@drawable/ic_user">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sp"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text="Customer Name"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sp"
+                        android:layout_height="@dimen/_20sp"
+                        android:src="@drawable/ic_phone">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sp"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text="12345 67890"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sp"
+                        android:layout_height="@dimen/_20sp"
+                        android:src="@drawable/ic_email">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sp"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:text="test@gmail.com"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/_14sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sp"
+            app:cardCornerRadius="@dimen/_10sp"
+            app:cardElevation="@dimen/_10sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sp">
+
+                <TextView
+                    android:id="@+id/txtQuotationDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_semi_bold"
+                    android:text="@string/quotation_details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_17sp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtQuotationDetails"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgPdf"
+                        android:layout_width="@dimen/_35sp"
+                        android:layout_height="@dimen/_35sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sp"
+                        android:src="@drawable/ic_pdf">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgPdf"
+                        android:layout_gravity="center"
+                        android:text="Quotation"
+                        android:gravity="center"
+                        android:textSize="@dimen/_10sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/_250sp"
+            android:layout_height="@dimen/_40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_40sp"
+            android:background="@drawable/edt_background"
+            android:fontFamily="@font/raleway_semi_bold"
+            android:text="@string/sent_quotation"
+            android:textSize="@dimen/_15sp"
+            app:backgroundTint="@color/black">
+
+        </Button>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sp"
+        android:layout_marginBottom="@dimen/_20sp">
+
+        <ImageView
+            android:id="@+id/imgWifi"
+            android:layout_width="@dimen/_80sp"
+            android:layout_height="@dimen/_80sp"
+            android:layout_centerHorizontal="true"
+
+            android:src="@drawable/ic_no_wifi">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txtNoInternet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgWifi"
+            android:layout_marginTop="@dimen/_10sp"
+            android:text="@string/no_internet"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_semi_bold"
+            android:textSize="@dimen/_17sp">
+
+        </TextView>
+
+        <TextView
+
+            android:id="@+id/txtCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNoInternet"
+            android:layout_marginTop="@dimen/_10sp"
+            android:text="Check your Internet connection and \ntry again"
+            android:gravity="center"
+            android:textColor="@color/dark_black"
+            android:fontFamily="@font/raleway_regular"
+            android:textSize="@dimen/_15sp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnOk"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/_80sp"
+            android:layout_height="@dimen/_40sp"
+            android:layout_marginTop="@dimen/_20sp"
+            android:background="@drawable/rounded_corner_button"
+            app:backgroundTint="@color/black"
+            android:textSize="@dimen/_15sp"
+            android:text="OK"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtCheck"
+            android:fontFamily="@font/raleway_semi_bold">
+
+        </Button>
+
+    </RelativeLayout>
+
+</LinearLayout>

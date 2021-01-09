@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">CRM</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="or">OR</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="full_name">Full Name</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+
+    <string name="google">Google</string>
+    <string name="simple_user">Simple User</string>
+    <string name="somthing_went">Something went wrong! Please try again</string>
+    <string name="login_successfully">Login successfully</string>
+    <string name="try_later">Please try later...</string>
+    <string name="invalid_email_pass">Invalid Email or password</string>
+    <string name="reg_successfully">Register successfully</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_valide_email">Enter Valid Email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="pass_greater_6">Password must be at least 6 characters</string>
+    <string name="company_name">Company Name</string>
+    <string name="product">Product</string>
+    <string name="service">Service</string>
+    <string name="product_service"><![CDATA[Product & service]]></string>
+    <string name="save">SAVE</string>
+    <string name="company_add">Company added successfully</string>
+    <string name="enter_company_name">Enter Company name</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="select_company_type">Select company type</string>
+    <string name="select_company_logo">Select company logo</string>
+    <string name="no_internet">NO INTERNET</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="enquiry">Enquiry</string>
+    <string name="quotations">Quotations</string>
+    <string name="orders">Orders</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="service_name">Service Name - </string>
+    <string name="enquiry_source">Enquiry source - </string>
+    <string name="enquiry_source_withoutdash">Enquiry source</string>
+    <string name="urgent">Urgent</string>
+    <string name="add_follow_up">Add Follow Up</string>
+    <string name="add_enquiry">Add Enquiry</string>
+    <string name="person_name">Person Name</string>
+    <string name="importance">Importance</string>
+    <string name="other_details">Other Details</string>
+    <string name="add_new_enquiry">Add New Enquiry</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="enquiry_for">Enquiry For</string>
+    <string name="enquiry_details">Enquiry Details</string>
+    <string name="service1">Service :</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="quotation_details">Quotation Details</string>
+    <string name="sent_quotation">SENT QUOTATION</string>
+    <string name="follow_up_date">Follow up Date</string>
+    <string name="follow_up_time">Follow up Time</string>
+    <string name="communication_medium">Communication Medium</string>
+    <string name="action">Action</string>
+    <string name="no_data_found">No data found</string>
+    <string name="add_enquiry_success">Enquiry added successfully</string>
+    <string name="enter_person_name">Enter person name</string>
+    <string name="enter_contact_number">Enter contact number</string>
+    <string name="enter_enquiry_for">Enter enquiry for</string>
+    <string name="enter_enquiry_source">Enter enquiry source</string>
+    <string name="enter_importance">Enter importance</string>
+
+</resources>

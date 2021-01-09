@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:layout_width="@dimen/_40sp"
+            android:layout_height="@dimen/_40sp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_no_data">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/txtNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data_found"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="@dimen/_20sp"
+            android:gravity="center">
+
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/company_name"
+            android:textSize="@dimen/_17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_regular">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sp"
+            android:background="@drawable/edt_line_background"
+            android:paddingLeft="@dimen/_15sp"
+            android:singleLine="true"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginTop="@dimen/_10sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/person_name"
+            android:textSize="@dimen/_17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_regular">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sp"
+            android:background="@drawable/edt_line_background"
+            android:paddingLeft="@dimen/_15sp"
+            android:singleLine="true"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginTop="@dimen/_10sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="@dimen/_17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_regular">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sp"
+            android:background="@drawable/edt_line_background"
+            android:paddingLeft="@dimen/_15sp"
+            android:singleLine="true"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginTop="@dimen/_10sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_number"
+            android:textSize="@dimen/_17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_regular">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtContactNo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sp"
+            android:background="@drawable/edt_line_background"
+            android:paddingLeft="@dimen/_15sp"
+            android:singleLine="true"
+            android:textSize="@dimen/_14sp"
+            android:inputType="number"
+            android:layout_marginTop="@dimen/_10sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enquiry_for"
+            android:textSize="@dimen/_17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_regular">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtEnquiryFor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sp"
+            android:background="@drawable/edt_line_background"
+            android:paddingLeft="@dimen/_15sp"
+            android:singleLine="true"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginTop="@dimen/_10sp">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15sp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enquiry_source_withoutdash"
+            android:textSize="@dimen/_17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_regular">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtEnquirySource"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sp"
+            android:background="@drawable/edt_line_background"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:paddingLeft="@dimen/_15sp"
+            android:paddingRight="@dimen/_15sp"
+            android:focusable="false"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginTop="@dimen/_10sp">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15sp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/importance"
+            android:textSize="@dimen/_17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_regular">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtImportance"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sp"
+            android:background="@drawable/edt_line_background"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:paddingRight="@dimen/_15sp"
+            android:paddingLeft="@dimen/_15sp"
+            android:focusable="false"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginTop="@dimen/_10sp">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15sp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/other_details"
+            android:textSize="@dimen/_17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_regular">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtOtherDetails"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sp"
+            android:background="@drawable/edt_line_background"
+            android:paddingLeft="@dimen/_15sp"
+            android:layout_marginTop="@dimen/_10sp"
+            android:textSize="@dimen/_14sp"
+            android:singleLine="true"
+            >
+
+        </EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddNewEnquiry"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/_250sp"
+        android:layout_height="@dimen/_40sp"
+        android:layout_marginTop="@dimen/_40sp"
+        android:background="@drawable/edt_background"
+        app:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_15sp"
+        android:text="@string/add_new_enquiry"
+        android:fontFamily="@font/raleway_semi_bold">
+
+    </Button>
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

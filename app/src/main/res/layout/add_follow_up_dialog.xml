@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sp"
+        android:layout_marginBottom="@dimen/_20sp"
+        android:paddingLeft="@dimen/_20sp"
+        android:paddingRight="@dimen/_20sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_semi_bold"
+            android:text="@string/add_follow_up"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/title_size_18">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/follow_up_date"
+                android:textSize="@dimen/_15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/raleway_regular">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sp"
+                android:background="@drawable/edt_line_background"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_10sp">
+
+                <EditText
+                    android:id="@+id/edtCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sp"
+                    android:background="@null"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="@dimen/_15sp"
+                    android:textSize="@dimen/_14sp">
+
+                </EditText>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_corner_button"
+                    android:backgroundTint="@color/black"
+                    android:layout_weight="1.8">
+
+                    <ImageView
+                        android:layout_width="@dimen/_23sp"
+                        android:layout_height="@dimen/_23sp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_calendar"
+                        android:tint="@color/white"
+                        >
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/follow_up_time"
+                android:textSize="@dimen/_15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/raleway_regular">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sp"
+                android:background="@drawable/edt_line_background"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_10sp">
+
+                <EditText
+                    android:id="@+id/edtCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sp"
+                    android:background="@null"
+                    android:layout_weight="0.2"
+                    android:paddingLeft="@dimen/_15sp"
+                    android:textSize="@dimen/_14sp">
+
+                </EditText>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_corner_button"
+                    android:backgroundTint="@color/black"
+                    android:layout_weight="1.8">
+
+                    <ImageView
+                        android:layout_width="@dimen/_23sp"
+                        android:layout_height="@dimen/_23sp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_time"
+                        android:tint="@color/white"
+                        >
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20sp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/communication_medium"
+                    android:textSize="@dimen/_17sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/raleway_regular">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edtEnquirySource"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sp"
+                    android:background="@drawable/edt_line_background"
+                    android:drawableRight="@drawable/ic_arrow_down"
+                    android:paddingLeft="@dimen/_15sp"
+                    android:paddingRight="@dimen/_15sp"
+                    android:focusable="false"
+                    android:textSize="@dimen/_14sp"
+                    android:layout_marginTop="@dimen/_10sp">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_20sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action"
+                    android:textSize="@dimen/_17sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/raleway_regular">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sp"
+                    android:background="@drawable/edt_line_background"
+                    android:gravity="top|left"
+                    android:paddingLeft="@dimen/_15sp"
+                    android:textSize="@dimen/_14sp"
+                    android:layout_marginTop="@dimen/_10sp">
+
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/_250sp"
+            android:layout_height="@dimen/_40sp"
+            android:layout_marginTop="@dimen/_40sp"
+            android:background="@drawable/edt_background"
+            app:backgroundTint="@color/black"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_15sp"
+            android:text="@string/add_follow_up"
+            android:fontFamily="@font/raleway_semi_bold">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
