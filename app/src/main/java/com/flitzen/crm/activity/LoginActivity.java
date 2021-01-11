@@ -42,7 +42,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 import butterknife.BindView;
@@ -235,6 +238,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                             map.put(FirebaseConstant.User.user_email, user.getEmail());
                                             map.put(FirebaseConstant.User.user_password, " ");
 
+                                            String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+                                            String currentTime = new SimpleDateFormat("hh:mm:ss", Locale.getDefault()).format(new Date());
+
+                                            map.put(FirebaseConstant.User.creationDate, currentDate+" "+currentTime);
+
                                             rootRef.child(FirebaseConstant.User.User_TABLE).child(key).setValue(map).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<Void>() {
                                                 @Override
                                                 public void onComplete(@NonNull Task<Void> task) {
@@ -331,7 +339,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
 
     public void showPrd() {
-        prd = new ProgressDialog(LoginActivity.this);
+        prd = new ProgressDialog(LoginActivity.this,R.style.MyAlertDialogStyle);
         prd.setMessage("Please wait...");
         prd.setCancelable(false);
         prd.show();

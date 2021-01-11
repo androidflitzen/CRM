@@ -30,6 +30,7 @@
                 android:layout_gravity="left"
                 android:layout_weight="1"
                 android:layout_marginRight="@dimen/_10sp"
+                app:cardElevation="@dimen/_10sp"
                 app:cardCornerRadius="@dimen/_5sp">
 
                 <RelativeLayout
@@ -78,6 +79,7 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/_10sp"
                 android:layout_alignParentRight="true"
+                app:cardElevation="@dimen/_10sp"
                 app:cardCornerRadius="@dimen/_5sp">
 
                 <RelativeLayout
@@ -134,6 +136,7 @@
                 android:layout_gravity="left"
                 android:layout_weight="1"
                 android:layout_marginRight="@dimen/_10sp"
+                app:cardElevation="@dimen/_10sp"
                 app:cardCornerRadius="@dimen/_5sp">
 
                 <RelativeLayout
@@ -182,6 +185,7 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="@dimen/_10sp"
                 android:layout_alignParentRight="true"
+                app:cardElevation="@dimen/_10sp"
                 app:cardCornerRadius="@dimen/_5sp">
 
                 <RelativeLayout

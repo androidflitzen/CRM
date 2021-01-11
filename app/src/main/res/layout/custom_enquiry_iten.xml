@@ -29,6 +29,7 @@
                     android:layout_weight="0.8">
 
                     <TextView
+                        android:id="@+id/txtCompanyName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Company Name"
@@ -172,7 +173,6 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_5sp"
                         android:paddingBottom="@dimen/_5sp"
-
                         android:orientation="horizontal">
 
                         <TextView

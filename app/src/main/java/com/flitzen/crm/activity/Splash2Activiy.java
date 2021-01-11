@@ -30,13 +30,16 @@ public class Splash2Activiy extends AppCompatActivity {
                 if(sharedPreferences.getBoolean(SharePref.isLoggedIn,false)){
                     if(sharedPreferences.getBoolean(SharePref.isAddCompany,false)){
                         startActivity(new Intent(Splash2Activiy.this, HomeActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
+                        overridePendingTransition(0,0);
                     }
                     else {
                         startActivity(new Intent(Splash2Activiy.this, AddCompanyActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
+                        overridePendingTransition(0,0);
                     }
                 }
                 else {
                     startActivity(new Intent(Splash2Activiy.this, LoginActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
+                    overridePendingTransition(0,0);
                 }
             }
         }, 2000);

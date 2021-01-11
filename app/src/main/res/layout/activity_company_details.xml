@@ -99,19 +99,6 @@
 
                     </ImageView>
 
-                    <ImageView
-                        android:id="@+id/imgEdit"
-                        android:layout_width="@dimen/_25sp"
-                        android:layout_height="@dimen/_25sp"
-                        android:src="@drawable/ic_pencil"
-                        android:layout_gravity="bottom|right"
-                        android:layout_marginRight="@dimen/_5sp"
-                        android:layout_marginBottom="@dimen/_5sp"
-                        android:visibility="gone"
-                        android:tint="@color/red">
-
-                    </ImageView>
-
                 </androidx.cardview.widget.CardView>
 
                 <TextView

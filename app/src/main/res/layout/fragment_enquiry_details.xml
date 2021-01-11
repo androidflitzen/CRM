@@ -175,7 +175,7 @@
                     <TextView
                         android:id="@+id/txtOtherDetails"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:fontFamily="@font/raleway_semi_bold"
                         android:text=" details"
                         android:textColor="@color/black"
@@ -300,6 +300,7 @@
                     </ImageView>
 
                     <TextView
+                        android:id="@+id/txtCustomerName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_10sp"
@@ -327,6 +328,7 @@
 
 
                     <TextView
+                        android:id="@+id/txtPhoneNo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_10sp"
@@ -353,6 +355,7 @@
                     </ImageView>
 
                     <TextView
+                        android:id="@+id/txtEmail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_10sp"

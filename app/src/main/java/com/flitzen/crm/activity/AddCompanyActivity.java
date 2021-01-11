@@ -53,8 +53,11 @@ import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
 
@@ -67,8 +70,6 @@ public class AddCompanyActivity extends AppCompatActivity implements View.OnClic
     ImageView imgLogo;
     @BindView(R.id.imgPlus)
     ImageView imgPlus;
-    @BindView(R.id.imgEdit)
-    ImageView imgEdit;
     @BindView(R.id.edtCompanyName)
     EditText edtCompanyName;
     @BindView(R.id.edtBaseCurrency)
@@ -102,7 +103,6 @@ public class AddCompanyActivity extends AppCompatActivity implements View.OnClic
 
         imgLogo.setOnClickListener(this);
         imgPlus.setOnClickListener(this);
-        imgEdit.setOnClickListener(this);
         edtBaseCurrency.setOnClickListener(this);
         btnSave.setOnClickListener(this);
 
@@ -158,9 +158,6 @@ public class AddCompanyActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.imgLogo:
-                break;
-
-            case R.id.imgEdit:
                 pickImage();
                 break;
 
@@ -286,8 +283,12 @@ public class AddCompanyActivity extends AppCompatActivity implements View.OnClic
         map.put(FirebaseConstant.Company.companyName, edtCompanyName.getText().toString().trim());
         map.put(FirebaseConstant.Company.companyLogo, logoString);
         map.put(FirebaseConstant.Company.baseCurrency, edtBaseCurrency.getText().toString().trim());
-
         map.put(FirebaseConstant.Company.companyType, companyTypeSelection);
+
+        String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        String currentTime = new SimpleDateFormat("hh:mm:ss", Locale.getDefault()).format(new Date());
+
+        map.put(FirebaseConstant.Company.creationDate, currentDate+" "+currentTime);
 
         rootRef.child(FirebaseConstant.Company.Company_TABLE).child(key).setValue(map).addOnCompleteListener(AddCompanyActivity.this, new OnCompleteListener<Void>() {
             @Override
@@ -428,7 +429,7 @@ public class AddCompanyActivity extends AppCompatActivity implements View.OnClic
     }
 
     public void showPrd() {
-        prd = new ProgressDialog(AddCompanyActivity.this);
+        prd = new ProgressDialog(AddCompanyActivity.this,R.style.MyAlertDialogStyle);
         prd.setMessage("Please wait...");
         prd.setCancelable(false);
         prd.show();

@@ -63,6 +63,7 @@
     <string name="follow_up_date">Follow up Date</string>
     <string name="follow_up_time">Follow up Time</string>
     <string name="communication_medium">Communication Medium</string>
+    <string name="enter_communication_medium">Enter Communication Medium</string>
     <string name="action">Action</string>
     <string name="no_data_found">No data found</string>
     <string name="add_enquiry_success">Enquiry added successfully</string>
@@ -71,5 +72,13 @@
     <string name="enter_enquiry_for">Enter enquiry for</string>
     <string name="enter_enquiry_source">Enter enquiry source</string>
     <string name="enter_importance">Enter importance</string>
+
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="enter_date">Enter Date</string>
+    <string name="enter_time">Enter Time</string>
+    <string name="enter_action">Enter Action</string>
+    <string name="add_follow_success">Follow up added successfully</string>
 
 </resources>

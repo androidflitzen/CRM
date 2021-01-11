@@ -50,12 +50,13 @@
                 android:layout_marginTop="@dimen/_10sp">
 
                 <EditText
-                    android:id="@+id/edtCompanyName"
+                    android:id="@+id/edtFollowDate"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sp"
                     android:background="@null"
                     android:layout_weight="0.2"
                     android:paddingLeft="@dimen/_15sp"
+                    android:focusable="false"
                     android:textSize="@dimen/_14sp">
 
                 </EditText>
@@ -108,12 +109,13 @@
                 android:layout_marginTop="@dimen/_10sp">
 
                 <EditText
-                    android:id="@+id/edtCompanyName"
+                    android:id="@+id/edtFollowTime"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sp"
                     android:background="@null"
                     android:layout_weight="0.2"
                     android:paddingLeft="@dimen/_15sp"
+                    android:focusable="false"
                     android:textSize="@dimen/_14sp">
 
                 </EditText>
@@ -160,13 +162,13 @@
                     android:id="@+id/edtEnquirySource"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sp"
+                    android:layout_marginTop="@dimen/_10sp"
                     android:background="@drawable/edt_line_background"
                     android:drawableRight="@drawable/ic_arrow_down"
+                    android:focusable="false"
                     android:paddingLeft="@dimen/_15sp"
                     android:paddingRight="@dimen/_15sp"
-                    android:focusable="false"
-                    android:textSize="@dimen/_14sp"
-                    android:layout_marginTop="@dimen/_10sp">
+                    android:textSize="@dimen/_14sp">
 
                 </EditText>
 
@@ -190,7 +192,7 @@
                 </TextView>
 
                 <EditText
-                    android:id="@+id/edtEmail"
+                    android:id="@+id/edtAction"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_80sp"
                     android:background="@drawable/edt_line_background"
@@ -206,7 +208,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnSignIn"
+            android:id="@+id/btnAddFollowUp"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="@dimen/_250sp"
             android:layout_height="@dimen/_40sp"

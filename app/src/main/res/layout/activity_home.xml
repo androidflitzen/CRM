@@ -55,8 +55,8 @@
                         android:layout_centerVertical="true"
                         android:layout_marginRight="@dimen/_20sp"
                         android:visibility="gone"
-
-                        >
+                        app:cardElevation="@dimen/_20sp"
+                        tools:targetApi="lollipop">
 
                         <RelativeLayout
                             android:layout_width="match_parent"

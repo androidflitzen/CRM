@@ -68,7 +68,7 @@ public class AddNewEnquiry extends Fragment implements View.OnClickListener, Imp
     private ArrayList<Importance_EnquirySourceItem> sourceItemArrayList = new ArrayList<Importance_EnquirySourceItem>();
     private ArrayList<Importance_EnquirySourceItem> sourceItemArrayListImportance = new ArrayList<Importance_EnquirySourceItem>();
     DatabaseReference databaseReference;
-    List<String> importanceList = Arrays.asList("High", "Medium", "Low");
+
     private Button btnAddNewEnquiry;
     ProgressDialog prd;
     DatabaseReference rootRef;
@@ -78,6 +78,8 @@ public class AddNewEnquiry extends Fragment implements View.OnClickListener, Imp
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         viewNewEnquiry = inflater.inflate(R.layout.fragment_add_new_enquiry, container, false);
+
+        List<String> importanceList = Arrays.asList(getResources().getString(R.string.high), getResources().getString(R.string.medium), getResources().getString(R.string.low));
 
         databaseReference = FirebaseDatabase.getInstance().getReference();
         edtImportance = viewNewEnquiry.findViewById(R.id.edtImportance);
@@ -229,6 +231,11 @@ public class AddNewEnquiry extends Fragment implements View.OnClickListener, Imp
             map.put(FirebaseConstant.Enquiry.enquiryDate, currentDate);
             map.put(FirebaseConstant.Enquiry.enquiryTime, currentTime);
 
+            String currentDate1 = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+            String currentTime1 = new SimpleDateFormat("hh:mm:ss", Locale.getDefault()).format(new Date());
+
+            map.put(FirebaseConstant.Enquiry.creationDate, currentDate1+" "+currentTime1);
+
             rootRef.child(FirebaseConstant.Enquiry.Enquiry_TABLE).child(key).setValue(map).addOnCompleteListener(getActivity(), new OnCompleteListener<Void>() {
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
@@ -318,7 +325,7 @@ public class AddNewEnquiry extends Fragment implements View.OnClickListener, Imp
     }
 
     public void showPrd() {
-        prd = new ProgressDialog(getActivity());
+        prd = new ProgressDialog(getActivity(),R.style.MyAlertDialogStyle);
         prd.setMessage("Please wait...");
         prd.setCancelable(false);
         prd.show();

@@ -12,5 +12,8 @@
     <color name="dark_black">#595959</color>
     <color name="page_back_color">#f0f0f0</color>
     <color name="red">#F63F3F</color>
+    <color name="high">#F63F3F</color>
+    <color name="medium">#8BC34A</color>
+    <color name="low">#03A9F4</color>
 
 </resources>

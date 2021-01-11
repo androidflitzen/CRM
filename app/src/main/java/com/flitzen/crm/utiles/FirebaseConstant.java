@@ -11,6 +11,7 @@ public class FirebaseConstant {
         public static String user_name="userName";
         public static String user_email="userEmail";
         public static String user_password="userPassword";
+        public static String creationDate="creationDate";
     }
 
 
@@ -31,6 +32,7 @@ public class FirebaseConstant {
         public static String baseCurrency="baseCurrency";
         public static String userId="userId";
         public static String companyType="companyType";                   // 0-Product , 1-Service  company type
+        public static String creationDate="creationDate";
 
     }
 
@@ -57,7 +59,21 @@ public class FirebaseConstant {
         public static String otherDetails="otherDetails";              // Not required field
         public static String enquiryDate="enquiryDate";
         public static String enquiryTime="enquiryTime";
+        public static String creationDate="creationDate";
 
     }
 
+    public static class FollowUp{
+        public static String FollowUp_TABLE="FollowUp";
+
+        public static String id="id";
+        public static String followerId="followerId";
+        public static String enquiryId="enquiryId";
+        public static String followUpDate="followUpDate";
+        public static String followUpTime="followUpTime";
+        public static String enquirySource="enquirySource";
+        public static String action="action";
+        public static String creationDate="creationDate";
+
+    }
 }

@@ -1,5 +1,6 @@
 package com.flitzen.crm.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,9 +34,26 @@ public class EnquiryAdapter extends RecyclerView.Adapter<EnquiryAdapter.ViewHold
         return viewHolder;
     }
 
+    @SuppressLint("NewApi")
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
+        holder.txtDate.setText(enquiryItemArrayList.get(position).getEnquiryDate());
+        holder.txtTime.setText(enquiryItemArrayList.get(position).getEnquiryTime());
+        holder.txtImportance.setText(enquiryItemArrayList.get(position).getImportance());
+        holder.txtEnquirySource.setText(enquiryItemArrayList.get(position).getEnquirySource());
+        holder.txtServiceName.setText(enquiryItemArrayList.get(position).getPersonName());
+        holder.txtCompanyName.setText(enquiryItemArrayList.get(position).getCompanyName());
+
+        if(enquiryItemArrayList.get(position).getImportance().equals(context.getString(R.string.high))){
+            holder.txtImportance.setBackgroundTintList(context.getResources().getColorStateList(R.color.high));
+        }
+        else if(enquiryItemArrayList.get(position).getImportance().equals(context.getString(R.string.medium))){
+            holder.txtImportance.setBackgroundTintList(context.getResources().getColorStateList(R.color.medium));
+
+        }else if(enquiryItemArrayList.get(position).getImportance().equals(context.getString(R.string.low))){
+            holder.txtImportance.setBackgroundTintList(context.getResources().getColorStateList(R.color.low));
+        }
     }
 
     public void setClickListener(ItemClickListener itemClickListener) {
@@ -43,7 +61,7 @@ public class EnquiryAdapter extends RecyclerView.Adapter<EnquiryAdapter.ViewHold
     }
 
     public interface ItemClickListener {
-        void onClick(View view, int position);
+        void onClickEnquiryItem(View view, int position);
     }
 
 
@@ -54,21 +72,22 @@ public class EnquiryAdapter extends RecyclerView.Adapter<EnquiryAdapter.ViewHold
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         public CardView cardAddFollowUp;
-        public TextView txtDate,txtTile,txtServiceName,txtEnquirySource,txtImportance;
+        public TextView txtDate,txtTime,txtServiceName,txtEnquirySource,txtImportance,txtCompanyName;
         public ViewHolder(View itemView) {
             super(itemView);
             cardAddFollowUp =  itemView.findViewById(R.id.cardAddFollowUp);
             txtDate = (TextView) itemView.findViewById(R.id.txtDate);
-            txtTile = itemView.findViewById(R.id.txtTile);
+            txtTime = itemView.findViewById(R.id.txtTime);
             txtServiceName = itemView.findViewById(R.id.txtServiceName);
             txtEnquirySource = itemView.findViewById(R.id.txtEnquirySource);
             txtImportance = itemView.findViewById(R.id.txtImportance);
+            txtCompanyName = itemView.findViewById(R.id.txtCompanyName);
             itemView.setOnClickListener(this);
             cardAddFollowUp.setOnClickListener(this);
         }
         @Override
         public void onClick(View view) {
-            if (clickListener != null) clickListener.onClick(view, getAdapterPosition());
+            if (clickListener != null) clickListener.onClickEnquiryItem(view, getAdapterPosition());
         }
     }
 }
