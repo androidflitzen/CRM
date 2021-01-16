@@ -130,6 +130,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
                     android:textSize="@dimen/_15sp">
 
                 </TextView>
@@ -144,6 +145,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
                     android:textSize="@dimen/_15sp">
 
                 </TextView>
@@ -158,6 +160,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
                     android:textSize="@dimen/_15sp">
 
                 </TextView>
@@ -172,6 +175,7 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
                     android:textSize="@dimen/_15sp">
 
                 </TextView>
