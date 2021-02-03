@@ -75,6 +75,7 @@
                             </ImageView>
 
                             <TextView
+                                android:id="@+id/txtAddBtnName"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/add_enquiry"
@@ -214,6 +215,11 @@
         android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="start" />
+        android:background="@color/black"
+        android:layout_gravity="start" >
+
+
+
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

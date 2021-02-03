@@ -16,6 +16,8 @@ import android.widget.TextView;
 import com.flitzen.crm.R;
 import com.flitzen.crm.fragment.DashboardFragment;
 import com.flitzen.crm.fragment.EnquiryFragment;
+import com.flitzen.crm.fragment.OrdersFragment;
+import com.flitzen.crm.fragment.QuotationFragment;
 
 import org.w3c.dom.Text;
 
@@ -101,9 +103,13 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.txtQuotations:
+                currentFragment=new QuotationFragment();
+                loadFragment(currentFragment,getResources().getString(R.string.quotations));
                 break;
 
             case R.id.txtOrders:
+                currentFragment=new OrdersFragment();
+                loadFragment(currentFragment,getResources().getString(R.string.orders));
                 break;
         }
     }

@@ -162,6 +162,7 @@
                         app:backgroundTint="@color/black"
                         android:textSize="@dimen/_15sp"
                         android:fontFamily="@font/raleway_semi_bold"
+                        android:foreground="@drawable/selectable_item_background"
                         android:text="@string/sign_up">
 
                     </Button>
@@ -194,6 +195,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         app:cardBackgroundColor="@color/white"
+                        android:foreground="?attr/selectableItemBackground"
                         android:layout_marginRight="@dimen/_10sp">
 
                         <ImageView
@@ -212,6 +214,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         app:cardBackgroundColor="@color/white"
+                        android:foreground="?attr/selectableItemBackground"
                         android:layout_marginLeft="@dimen/_10sp">
 
                         <ImageView

@@ -276,6 +276,7 @@
         app:backgroundTint="@color/black"
         android:layout_gravity="center"
         android:textSize="@dimen/_15sp"
+        android:foreground="@drawable/selectable_item_background"
         android:text="@string/add_new_enquiry"
         android:fontFamily="@font/raleway_semi_bold">
 

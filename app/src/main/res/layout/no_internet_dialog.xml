@@ -57,6 +57,7 @@
             android:layout_height="@dimen/_40sp"
             android:layout_marginTop="@dimen/_20sp"
             android:background="@drawable/rounded_corner_button"
+            android:foreground="@drawable/selectable_item_background"
             app:backgroundTint="@color/black"
             android:textSize="@dimen/_15sp"
             android:text="OK"

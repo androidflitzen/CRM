@@ -28,17 +28,33 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.8">
 
-                    <TextView
-                        android:id="@+id/txtCompanyName"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Company Name"
-                        android:fontFamily="@font/raleway_semi_bold"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/title_size_18"
-                        android:layout_gravity="bottom">
+                        android:layout_marginTop="@dimen/_5sp"
+                        android:orientation="horizontal">
 
-                    </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/quotation_no"
+                            android:fontFamily="@font/raleway_semi_bold"
+                            android:textColor="@color/dark_black"
+                            android:textSize="@dimen/_14sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" QT001"
+                            android:fontFamily="@font/raleway_semi_bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sp">
+
+                        </TextView>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -100,7 +116,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_20sp"
+                android:layout_marginTop="@dimen/title_size_18"
                 android:orientation="horizontal"
                 android:paddingBottom="@dimen/_10sp"
                 android:weightSum="2">
@@ -111,15 +127,27 @@
                     android:orientation="vertical"
                     android:layout_weight="0.8">
 
+                    <TextView
+                        android:id="@+id/txtCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Company Name"
+                        android:fontFamily="@font/raleway_semi_bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/title_size_18">
+
+                    </TextView>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sp"
                         android:orientation="horizontal">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/service_name"
+                            android:text="@string/contact_no"
                             android:fontFamily="@font/raleway_semi_bold"
                             android:textColor="@color/dark_black"
                             android:textSize="@dimen/_14sp">
@@ -130,7 +158,7 @@
                             android:id="@+id/txtServiceName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Logo Design"
+                            android:text=" 1234567896"
                             android:fontFamily="@font/raleway_semi_bold"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_14sp">
@@ -148,7 +176,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/enquiry_source"
+                            android:text="@string/product_"
                             android:fontFamily="@font/raleway_semi_bold"
                             android:textColor="@color/dark_black"
                             android:textSize="@dimen/_14sp">
@@ -159,7 +187,7 @@
                             android:id="@+id/txtEnquirySource"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Linkedin"
+                            android:text=" Test Product"
                             android:fontFamily="@font/raleway_semi_bold"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_14sp">
@@ -178,7 +206,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Importance"
+                            android:text="@string/services_"
                             android:fontFamily="@font/raleway_semi_bold"
                             android:textColor="@color/dark_black"
                             android:textSize="@dimen/_14sp">
@@ -186,24 +214,15 @@
                         </TextView>
 
                         <TextView
-                            android:id="@+id/txtImportance"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/urgent"
+                            android:text=" Test Service"
                             android:fontFamily="@font/raleway_semi_bold"
-                            android:textColor="@color/white"
-                            android:background="@drawable/rounded_corner_button_extra_radius"
-                            android:layout_marginLeft="@dimen/_20sp"
-                            android:paddingLeft="@dimen/_20sp"
-                            android:paddingRight="@dimen/_20sp"
-                            android:paddingTop="@dimen/_2sp"
-                            android:paddingBottom="@dimen/_2sp"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:backgroundTint="@color/red"
-                            android:textSize="@dimen/_12sp">
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sp">
 
                         </TextView>
+
 
                     </LinearLayout>
 
@@ -221,44 +240,48 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cardAddFollowUp"
                         android:layout_width="wrap_content"
-                        android:layout_height="@dimen/_30sp"
+                        android:layout_height="@dimen/_40sp"
                         app:cardBackgroundColor="@color/light_black"
                         android:foreground="?attr/selectableItemBackground"
 
                         >
 
-                        <RelativeLayout
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:paddingRight="@dimen/_10sp"
-                            android:paddingLeft="@dimen/_10sp">
+                            android:paddingRight="@dimen/_15sp"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/_15sp">
 
-                            <ImageView
+                            <TextView
                                 android:id="@+id/imgPlus"
-                                android:layout_width="@dimen/_10sp"
-                                android:layout_height="@dimen/_10sp"
-                                android:src="@drawable/ic_plus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Quote"
                                 android:layout_centerVertical="true"
+                                android:textSize="@dimen/_12sp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/raleway_bold"
                                 android:layout_gravity="center">
 
-                            </ImageView>
+                            </TextView>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/add_follow_up"
+                                android:text="10,000"
                                 android:layout_gravity="center"
                                 android:layout_toRightOf="@id/imgPlus"
                                 android:layout_marginLeft="@dimen/_5sp"
                                 android:layout_centerVertical="true"
                                 android:textSize="@dimen/_12sp"
                                 android:textColor="@color/black"
-                                android:fontFamily="@font/raleway_semi_bold"
+                                android:fontFamily="@font/raleway_extra_bold"
                                 android:gravity="center">
 
                             </TextView>
 
-                        </RelativeLayout>
+                        </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
 

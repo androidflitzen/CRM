@@ -80,5 +80,10 @@
     <string name="enter_time">Enter Time</string>
     <string name="enter_action">Enter Action</string>
     <string name="add_follow_success">Follow up added successfully</string>
+    <string name="quotation_no">Quotation no :</string>
+    <string name="contact_no">Contact no :</string>
+    <string name="product_">Product :</string>
+    <string name="services_">Services :</string>
+    <string name="new_quotation">New Quotation</string>
 
 </resources>

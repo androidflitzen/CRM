@@ -89,6 +89,7 @@ public class EnquiryFragment extends Fragment implements View.OnClickListener, E
     private Importance_EnquirySource_Adapter importanceEnquirySourceAdapter;
     private ArrayList<Importance_EnquirySourceItem> sourceItemArrayList = new ArrayList<Importance_EnquirySourceItem>();
     DatabaseReference databaseReference;
+    TextView txtAddBtnName;
 
     @Nullable
     @Override
@@ -142,6 +143,8 @@ public class EnquiryFragment extends Fragment implements View.OnClickListener, E
         TextView txtTile=((AppCompatActivity) getActivity()).findViewById(R.id.txtTile);
         txtTile.setText(getContext().getResources().getString(R.string.enquiry));
         cardAddEnquiry=((AppCompatActivity) getActivity()).findViewById(R.id.cardAddEnquiry);
+        txtAddBtnName=((AppCompatActivity) getActivity()).findViewById(R.id.txtAddBtnName);
+        txtAddBtnName.setText(getActivity().getResources().getString(R.string.add_enquiry));
         cardAddEnquiry.setVisibility(View.VISIBLE);
         cardAddEnquiry.setOnClickListener(this);
 

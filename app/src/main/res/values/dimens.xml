@@ -31,4 +31,5 @@
     <dimen name="_130sp">130sp</dimen>
     <dimen name="_2sp">2sp</dimen>
     <dimen name="_23sp">23sp</dimen>
+    <dimen name="_1000sp">1000sp</dimen>
 </resources>

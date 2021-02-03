@@ -42,6 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_30sp"
                     android:layout_alignParentRight="true"
+                    android:foreground="?attr/selectableItemBackground"
                     android:layout_gravity="right"
                     app:cardBackgroundColor="@color/light_black">
 
@@ -437,6 +438,7 @@
             android:layout_marginTop="@dimen/_40sp"
             android:background="@drawable/edt_background"
             android:fontFamily="@font/raleway_semi_bold"
+            android:foreground="@drawable/selectable_item_background"
             android:text="@string/sent_quotation"
             android:textSize="@dimen/_15sp"
             app:backgroundTint="@color/black">
